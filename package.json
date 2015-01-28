@@ -1,0 +1,25 @@
+{
+  "name": "mdev-env",
+  "version": "1.0.0",
+  "description": "Niks Mule development environment",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start server.js --name \"mule\"",
+    "stop": "pm2 stop server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node-debug server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nik0kin/mdev-env"
+  },
+  "author": "@nikpoklitar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nik0kin/mdev-env/issues"
+  },
+  "homepage": "https://github.com/nik0kin/mdev-env",
+  "dependencies": {
+    "mule": "git+https://git@github.com/nik0kin/mule.git"
+  }
+}
