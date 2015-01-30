@@ -7,7 +7,7 @@ module.exports = {
   minimumAutoCreateGameTimerCheck: 30,
   ruleBundles: {
     'connectX': {
-      path: path.resolve('../games/connectx/bundleCode'),
+      codePath: path.resolve(__dirname + '../../games/connectx/bundleCode'),
       autoCreateGame: connect4
     }
   }

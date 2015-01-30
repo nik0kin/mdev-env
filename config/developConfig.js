@@ -1,6 +1,6 @@
 var path = require('path');
 
-var muleConfig = require('./onlyConnectXConfig');
+var muleConfig = require('./allMuleGamesConfig');
 
 var devConfig = {
   http: {
@@ -12,6 +12,7 @@ var devConfig = {
   },
   mule: muleConfig,
 
+  logLevel: 4, // Verbose
   logsPath:  path.normalize(__dirname + '/../logs')
 };
 

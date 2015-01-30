@@ -1,10 +1,12 @@
+var path = require('path');
+
 module.exports = {
   minimumGameRoundTimerCheck: 10, //seconds
   minimumAutoCreateGameTimerCheck: 30,
   ruleBundles: 
     {
-      'CheCkers': {},
       'BackGammon': {
+        codePath: path.resolve(__dirname + '/../games/backgammon/bundleCode'),
         autoCreateGame: {
           name: 'HARDCORE BACKGAMMON 1v1',
           maxPlayers: 2, // TODO dont require putting properties for properties that are static via the rulebundle (must have 2 players in backgammon)
@@ -13,8 +15,8 @@ module.exports = {
           ruleBundleGameSettings: {customBoardSettings: {}}
         }
       },
-      'VIKINGS': {},
       'tictactoe': {
+        codePath: path.resolve(__dirname + '/../games/tictactoe/bundleCode'),
         autoCreateGame: {
           name: 'TicTacToe4Tots',
           maxPlayers: 2, // TODO dont require putting properties for properties that are static via the rulebundle (must have 2 players in backgammon)
@@ -23,8 +25,8 @@ module.exports = {
           ruleBundleGameSettings: {customBoardSettings: {}}
         }
       },
-      'monopoly': {},
       'connectX': {
+        codePath: path.resolve(__dirname + '/../games/connectx/bundleCode'),
         autoCreateGame: {
           name: 'connect4',
           maxPlayers: 2,
@@ -38,6 +40,7 @@ module.exports = {
         }
       },
       'mulesprawl': {
+        codePath: path.resolve(__dirname + '/../games/mulesprawl/bundleCode'),
         autoCreateGame: {
           name: 'auto mulesprawl game',
           maxPlayers: 1,
