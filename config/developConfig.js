@@ -5,6 +5,12 @@ var muleConfig = require('./allMuleGamesConfig');
 var devConfig = {
   http: {
     routesPrefix: '/webservices',
+    serveStaticFolders: {
+      '/static/backgammon': path.join(__dirname, '../games', 'backgammon/src'),
+      '/static/connectx': path.join(__dirname, '../games', 'connectx/src'),
+      '/static/mulesprawl': path.join(__dirname, '../games', 'mulesprawl/src'),
+      '/static/tictactoe': path.join(__dirname, '../games', 'tictactoe/src')
+    },
     port: 3130
   },
   database: {
