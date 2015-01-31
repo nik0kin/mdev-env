@@ -23,4 +23,11 @@ git pull
 (cd bundleCode && npm install)
 cd ..
 
+cd vikings
+git pull
+npm install
+rm -rf dist/; broccoli build dist/
+(cd bundleCode && npm install)
+cd ..
+
 cd ..

@@ -5,6 +5,19 @@ module.exports = {
   minimumAutoCreateGameTimerCheck: 30,
   ruleBundles: 
     {
+      'vikings': {
+        codePath: path.resolve(__dirname + '/../games/vikings/bundleCode'),
+        autoCreateGame: {
+          name: 'Vikings for 2',
+          maxPlayers: 2,
+          turnProgressStyle: 'autoprogress',
+          turnTimeLimit: 30,
+          ruleBundleGameSettings: {customBoardSettings: {
+            width: 20,
+            height: 20
+          }}
+        }
+      },
       'BackGammon': {
         codePath: path.resolve(__dirname + '/../games/backgammon/bundleCode'),
         autoCreateGame: {

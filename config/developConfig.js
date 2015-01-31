@@ -6,6 +6,7 @@ var devConfig = {
   http: {
     routesPrefix: '/webservices',
     serveStaticFolders: {
+      '/static/vikings': path.join(__dirname, '../games', 'vikings/dist'),
       '/static/backgammon': path.join(__dirname, '../games', 'backgammon/src'),
       '/static/connectx': path.join(__dirname, '../games', 'connectx/src'),
       '/static/mulesprawl': path.join(__dirname, '../games', 'mulesprawl/src'),
