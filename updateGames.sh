@@ -26,6 +26,7 @@ cd ..
 cd vikings
 git pull
 npm install
+bower install
 rm -rf dist/; broccoli build dist/
 (cd bundleCode && npm install)
 cd ..
