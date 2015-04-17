@@ -18,6 +18,8 @@ git clone git@github.com:TheGamingProject/mule-backgammon backgammon
 git clone git@github.com:nik0kin/v vikings
 cd vikings
 npm install
+bower install
+./devsdk
 broccoli build dist/
 (cd bundleCode && npm install)
 cd ..

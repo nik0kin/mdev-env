@@ -13,8 +13,8 @@ module.exports = {
           turnProgressStyle: 'autoprogress',
           turnTimeLimit: 30,
           ruleBundleGameSettings: {customBoardSettings: {
-            width: 20,
-            height: 20
+            width: 30,
+            height: 30
           }}
         }
       },
