@@ -7,16 +7,25 @@ module.exports = {
     {
       'vikings': {
         codePath: path.resolve(__dirname + '/../games/vikings/bundleCode'),
-        autoCreateGame: {
+        autoCreateGame: [{
           name: 'Vikings for 2',
           maxPlayers: 2,
           turnProgressStyle: 'autoprogress',
-          turnTimeLimit: 30,
+          turnTimeLimit: 60, // 1 minute
           ruleBundleGameSettings: {customBoardSettings: {
             width: 30,
             height: 30
           }}
-        }
+        }, {
+          name: 'Vikings for 2 turtles',
+          maxPlayers: 2,
+          turnProgressStyle: 'autoprogress',
+          turnTimeLimit: 60 * 60 * 1, // 1 hour
+          ruleBundleGameSettings: {customBoardSettings: {
+            width: 40,
+            height: 40
+          }}
+        }]
       },
       'BackGammon': {
         codePath: path.resolve(__dirname + '/../games/backgammon/bundleCode'),
