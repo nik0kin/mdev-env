@@ -13,6 +13,7 @@ module.exports = {
           turnProgressStyle: 'autoprogress',
           turnTimeLimit: 60, // 1 minute
           ruleBundleGameSettings: {customBoardSettings: {
+            mapType: 'diamond',
             width: 30,
             height: 30
           }}
@@ -22,6 +23,7 @@ module.exports = {
           turnProgressStyle: 'autoprogress',
           turnTimeLimit: 60 * 60 * 1, // 1 hour
           ruleBundleGameSettings: {customBoardSettings: {
+            mapType: 'diamond',
             width: 40,
             height: 40
           }}
