@@ -1,6 +1,7 @@
 var path = require('path');
 
-var muleConfig = require('./allMuleGamesConfig');
+//var muleConfig = require('./allMuleGamesConfig');
+var devBattleshipConfig = require('./devBattleshipConfig');
 
 var devConfig = {
   http: {
@@ -17,7 +18,8 @@ var devConfig = {
   database: {
     db: 'mongodb://localhost/mule_dev',
   },
-  mule: muleConfig,
+  // mule: muleConfig,
+  mule: devBattleshipConfig,
 
   logLevel: 4, // Verbose
   logsPath:  path.normalize(__dirname + '/../logs')

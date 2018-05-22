@@ -4,6 +4,8 @@ mule development environment
 ### Dependencys
  see http://github.com/nik0kin/mule for dependencys
 
+ grunt-cli, broccoli-cli, bower
+
 ### Install
 
 ```
