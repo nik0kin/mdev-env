@@ -1,0 +1,25 @@
+
+
+
+Delete Game
+ - mark game as deleted
+
+Dont poll for games that are deleted
+
+
+
+
+
+
+
+
+Delete Game (mule-models)
+  - markAsDeleted should set .deleted to true
+
+
+Delete Game (mule)
+  - deleteGame api function should exist
+  - DEL /games/:id endpoint should exist
+  - after deleting it should not exist in a GET /games/
+  - after deleting it, GET /games/id should return 410 Gone
+  - should send 403 Forbidden if the user is not first player

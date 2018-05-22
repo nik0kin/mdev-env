@@ -1,0 +1,4 @@
+
+create game fail error doesnt propegate (or get logged)
+
+add error to boardGeneratorHookQ to test

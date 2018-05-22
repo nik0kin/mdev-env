@@ -27,6 +27,24 @@ module.exports = {
             width: 40,
             height: 40
           }}
+        }, {
+          name: 'single player 2min turn',
+          maxPlayers: 1,
+          turnProgressStyle: 'autoprogress',
+          turnTimeLimit: 60 * 2, // 2 minutes
+          ruleBundleGameSettings: {customBoardSettings: {
+            mapType: 'diamond',
+            width: 30,
+            height: 30
+          }}
+        }, {
+          name: 'single player twin mountains',
+          maxPlayers: 1,
+          turnProgressStyle: 'autoprogress',
+          turnTimeLimit: 60 * 2, // 2 minutes
+          ruleBundleGameSettings: {customBoardSettings: {
+            mapName: 'twinmountains'
+          }}
         }]
       },
       'BackGammon': {

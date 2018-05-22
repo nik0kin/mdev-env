@@ -1,0 +1,7 @@
+how should a gameStart failure be handled?
+
+  - game does start?
+   - but it doesnt have correct state to be playable
+
+  - game doesnt start
+   - does the player have to retry joining? (what if it fails over and over?)
