@@ -1,9 +1,11 @@
 var path = require('path');
 
+var devBattleshipConfig = require('./devBattleshipConfig');
+
 module.exports = {
   minimumGameRoundTimerCheck: 10, //seconds
   minimumAutoCreateGameTimerCheck: 30,
-  ruleBundles: 
+  ruleBundles:
     {
       'vikings': {
         codePath: path.resolve(__dirname + '/../games/vikings/bundleCode'),
@@ -57,6 +59,7 @@ module.exports = {
           ruleBundleGameSettings: {customBoardSettings: {}}
         }
       },
+      'Battleship': devBattleshipConfig.ruleBundles.Battleship,
       'tictactoe': {
         codePath: path.resolve(__dirname + '/../games/tictactoe/bundleCode'),
         autoCreateGame: {
