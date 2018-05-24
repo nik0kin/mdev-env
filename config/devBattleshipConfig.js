@@ -2,12 +2,15 @@ var path = require('path');
 
 var battleship = require('./autoCreate/standardBattleship');
 
+var devPath = path.resolve(__dirname + '/../../mule-battleship/dist/bundleCode');
+var prodPath = path.resolve(__dirname + '/../games/mule-battleship/dist/bundleCode');
+
 module.exports = {
   minimumGameRoundTimerCheck: 10, // seconds
   minimumAutoCreateGameTimerCheck: 30,
   ruleBundles: {
     'Battleship': {
-      codePath: path.resolve(__dirname + '/../../../dev/mule-battleship/dist/bundleCode'),
+      codePath: prodPath,
       autoCreateGame: battleship
     }
   }

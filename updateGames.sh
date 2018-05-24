@@ -32,4 +32,6 @@ rm -rf dist/; broccoli build dist/
 (cd bundleCode && npm install)
 cd ..
 
+(cd battleship && git pull)
+
 cd ..

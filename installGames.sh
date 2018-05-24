@@ -24,4 +24,6 @@ broccoli build dist/
 (cd bundleCode && npm install)
 cd ..
 
+git clone git@github.com:nik0kin/mule-battleship battleship
+
 cd ..
