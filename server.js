@@ -1,10 +1,16 @@
 // Run mule server!
 
-var mule = require('mule');
+let mule = require('mule');
 
-var config = require('./config/developConfig');
+let config;
+if (process.env && process.env.prod) {
+  console.log('Using Production Config')
+  config = require('./config/prodConfig');
+} else {
+  config = require('./config/developConfig');
+}
 
 mule.initQ(config)
-  .then(function () {
+  .then(() => {
     console.log('MuleDev is Running!');
   });

@@ -10,7 +10,7 @@ module.exports = {
   minimumAutoCreateGameTimerCheck: 30,
   ruleBundles: {
     'Battleship': {
-      codePath: prodPath,
+      codePath: devPath,
       autoCreateGame: battleship
     }
   }
