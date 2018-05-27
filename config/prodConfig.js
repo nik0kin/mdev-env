@@ -8,7 +8,7 @@ var devConfig = {
     serveStaticFolders: {
       '/static/vikings': path.join(__dirname, '../games', 'vikings/dist'),
       '/static/backgammon': path.join(__dirname, '../games', 'backgammon/src'),
-      '/static/battleship': path.join(__dirname, '../../mule-battleship', 'dist/frontend'),
+      '/static/battleship': path.join(__dirname, '../games', 'battleship/dist/frontend'),
       '/static/connectx': path.join(__dirname, '../games', 'connectx/src'),
       '/static/mulesprawl': path.join(__dirname, '../games', 'mulesprawl/src'),
       '/static/tictactoe': path.join(__dirname, '../games', 'tictactoe/src')
