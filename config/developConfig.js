@@ -10,6 +10,7 @@ var devConfig = {
       '/static/backgammon': path.join(__dirname, '../games', 'backgammon/src'),
       '/static/battleship': path.join(__dirname, '../../mule-battleship', 'dist/frontend'),
       '/static/connectx': path.join(__dirname, '../games', 'connectx/src'),
+      '/static/lords-of-sprawlville': path.join(__dirname, '../games/lords-of-sprawlville', 'dist/frontend'),
       '/static/mulesprawl': path.join(__dirname, '../games', 'mulesprawl/src'),
       '/static/tictactoe': path.join(__dirname, '../games', 'tictactoe/src')
     },

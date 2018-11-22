@@ -1,6 +1,7 @@
 var path = require('path');
 
 var devBattleshipConfig = require('./devBattleshipConfig');
+var lordsConfig = require('./lordsConfig');
 
 module.exports = {
   minimumGameRoundTimerCheck: 10, //seconds
@@ -84,6 +85,7 @@ module.exports = {
           }}
         }
       },
+      'Lords of Sprawlville': lordsConfig,
       'mulesprawl': {
         codePath: path.resolve(__dirname + '/../games/mulesprawl/bundleCode'),
         autoCreateGame: {

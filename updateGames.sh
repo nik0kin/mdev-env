@@ -34,4 +34,6 @@ cd ..
 
 (cd battleship && git pull)
 
+(cd lords-of-sprawlville && git pull) || echo "missing zion.tgp.io git access"
+
 cd ..

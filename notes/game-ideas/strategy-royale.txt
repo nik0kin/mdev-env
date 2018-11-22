@@ -1,0 +1,16 @@
+Royale:
+  - airdrop to start
+  - circles that keep getting smaller
+  - last man standing wins
+  - looting
+
+Simplest royale strategy game:
+
+
+hero
+  - can build
+
+
+
+
+

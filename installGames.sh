@@ -26,4 +26,6 @@ cd ..
 
 git clone git@github.com:nik0kin/mule-battleship battleship
 
+git clone git@zion.tgp.io:lords-of-sprawlville.git lords-of-sprawlville || echo "missing zion.tgp.io git access"
+
 cd ..
