@@ -17,7 +17,7 @@ var devConfig = {
     port: 3130
   },
   database: {
-    db: 'mongodb://zion.tgp.io/mule_dev',
+    db: 'mongodb://localhost/mule_prod',
   },
   mule: muleConfig,
 
